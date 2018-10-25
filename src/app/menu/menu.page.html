@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="home()" icon-only>back</ion-button>
+    </ion-buttons>
+    <ion-title>menu</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="light" (click)="cam()" icon-only>
+        <ion-icon name="md-camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center color="danger" padding>
+  <ion-item>
+    <ion-label position="floating">Text :</ion-label>
+    <ion-input [(ngModel)]="texts" type="Text"></ion-input>
+  </ion-item>
+  <ion-button expand="round" (click)="textto()" color="success">SayText</ion-button>
+
+  <ion-img [src]="imgs"></ion-img>
+
+</ion-content>
